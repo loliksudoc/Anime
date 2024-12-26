@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Bleach</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Аниме Bleach</h1>
+    </header>
+
+    <main>
+        <section id="video-container">
+            <h2>Выберите серию для просмотра</h2>
+            <!-- Видеоплеер -->
+            <div id="video-player">
+                <iframe id="video-frame" width="800" height="450" 
+                        src="https://www.youtube.com/embed/ID_сериала" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="episodes">
+            <h2>Список серий</h2>
+            <ul>
+                <!-- Ссылки на эпизоды -->
+                <li><a href="series.html?episode=1">Серия 1: Пробуждение</a></li>
+                <li><a href="series.html?episode=2">Серия 2: Поединок</a></li>
+                <li><a href="series.html?episode=3">Серия 3: Сражение</a></li>
+                <!-- Добавьте все эпизоды -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anime Bleach</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,67 +1,82 @@
+element.style {
+}
 * {
+    background: none;
     margin: 0;
     padding: 0;
+    outline: none;
+    border: 0;
     box-sizing: border-box;
 }
-
+user agent stylesheet
+script {
+    display: none;
+}
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-#video-container {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#video-player {
-    margin: 0 auto;
-    padding: 20px;
-}
-
-#episodes ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-#episodes li {
-    margin: 10px 0;
-}
-
-#episodes a {
-    color: #333;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-#episodes a:hover {
-    color: #007bff;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    font: 16px / 1.4 'PFDinDisplayPro', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: var(--tt);
+    background-color: #000;
     width: 100%;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@media screen and (max-width: 1220px) {
+    :root {
+        --indent-negative: -20px;
+        --indent: 20px;
+    }
+}
+:root {
+    --bg: #fff;
+    --bg-darker: #f7f8f9;
+    --bg-darkest: #dadada;
+    --bg-black: #15161a;
+    --tt: #212121;
+    --tt-fade: #8e8e8e;
+    --tt-fadest: #a8a8a8;
+    --bg-btn: #e76d39;
+    --tt-btn: #fff;
+    --bg-btn-hover: #ca5a2a;
+    --bdc: rgba(0, 0, 0, 0.066);
+    --bdc-light: rgba(255, 255, 255, 0.1);
+    --bsh: 0 30px 60px rgba(0, 0, 0, 0.2);
+    --bsh-poster: 0 3px 10px 0px rgba(0, 0, 0, 0.10);
+    --bsh-content: 0 5px 20px 0 rgba(0, 0, 0, 0.15);
+    --gradient: linear-gradient(to right, #e76d39, #faaf38);
+    --bdrs: 0px;
+    --accent-primary: #e76d39;
+    --accent-secondary: #faaf38;
+    --red: #dd3954;
+    --blue: #00a2ff;
+    --green: #33ba69;
+    --violet: #8c04e2;
+    --yellow: #f4bd00;
+    --grey: #9e9c9c;
+    --ui-bg: #fff;
+    --ui-bg-darker: #f6f6f8;
+    --ui-bg-darkest: #e4e5e7;
+    --ui-accent: #06c;
+    --ui-bdc: #e3e3e3;
+    --ui-tt-fade: #888;
+    --ui-fw-bolder: 700;
+    --ui-fw-fa: 900;
+    --ui-bsh: 0 12px 40px rgba(0, 0, 0, 0.3);
+    --ui-bsh-inset: inset 1px 2px 5px rgba(0, 0, 0, 0.1);
+    --ui-bdrs: 0px;
+    --ui-gradient: linear-gradient(to bottom, #5c4f68, #352d3c);
+    --ui-bg-black: #352d3c;
+    --ui-green: #65c03e;
+    --ui-red: #eb4d4b;
+    --ui-bg-attention: #FFF3E0;
+    --ui-bd-attention: #FF9800;
+    --indent-negative: -40px;
+    --indent: 40px;
+    --max-width: 1200px;
+}
+::selection {
+    background: #ff0000;
+    color: #fff;
 }
